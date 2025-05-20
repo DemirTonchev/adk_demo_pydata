@@ -1,0 +1,20 @@
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "bank-agent"
+version = "0.1.0"
+description = "Demo Bank Agent using Google ADK"
+dependencies = [
+    "google-adk",
+    "pydantic",
+    "fastmcp",
+]
+
+[tool.flake8]
+ignore = [
+    "E501",
+]
